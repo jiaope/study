@@ -17,10 +17,6 @@ def simple_ssh_connect(ip, port, user, passwd, cmd):
         new_ssh.close()
 
 
-if __name__ == '__main__':
-    simple_ssh_connect('192.168.10.1', 22, 'root', '1234qwer', 'ip -4 a')
-
-
 """
 @author: jiaopengyu
 @file: Simple_SSH_Client.py.py
