@@ -3,8 +3,8 @@
 from tcping import Ping
 
 
-def simple_tcping(ip, num):
-    new_tcping = Ping(ip, 80, 3)    # ip，端口，超时时间
+def simple_tcping(ip, port, timeout, num):
+    new_tcping = Ping(ip, port, timeout)    # ip，端口，超时时间
     new_tcping.ping(num)
 #    res = new_tcping.result.table   # 以表格形式展现（ping.result.raw  # 原始形态，ping.result.rows  # 行显示）
     ret = new_tcping.result.raw
