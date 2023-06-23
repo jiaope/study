@@ -11,7 +11,7 @@ def simple_tcping(ip, port, timeout, num):
     ret_list = list(ret.split('\n'))
     success_rata = ret_list[2].split(',')[3].split(' ')[1]  # 获取成功Ping通比率
 #    return res, success_rata
-    if float(success_rata.strip("%")) > 80.0:
+    if float(success_rata.strip("%")) >= 80.0:
         return 0
     else:
         return 1

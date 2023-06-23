@@ -6,10 +6,8 @@
 @time: 2023/06/05 13:17:29
 """
 
-from NetWork.TCP import TcpPing
-
+from NetWork.ICMP import Simple_Ping
 
 if __name__ == '__main__':
-    a = TcpPing.simple_tcping("192.168.1.250", 22, 3, 10)
+    a = Simple_Ping.simple_ping("baidu.com", "192.168.1.254", 0.2, 10, 0.02)
     print(a)
-
